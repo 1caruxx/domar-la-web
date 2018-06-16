@@ -1,0 +1,24 @@
+.content {
+    height: 100%;
+    display: none;
+}
+
+.image-hero {
+    position: relative;
+    height: 70%;
+    display: flex;
+}
+
+.image-hero .lalaa {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    font-family: "permanent marker";
+    font-size: 10vw;
+    color: white;
+    height: 100%;
+    left: 4vw;
+    -moz-user-select: none;
+    user-select: none;
+}

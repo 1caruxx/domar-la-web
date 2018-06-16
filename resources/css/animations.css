@@ -1,3 +1,12 @@
+@keyframes opacidad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes sombreado {
     from {
         opacity: 0.5;

@@ -1,18 +1,25 @@
-html, body {
+html {
+    animation-name: opacidad;
+    animation-duration: 1s;
+    animation-timing-function: linear;
     height: 100%;
+    font-family: roboto;
 }
 
 body {
-    font-family: roboto;
+    height: 100%;
     margin: 0;
     overflow: hidden;
 }
 
-.intro-container {
+.intro {
     position: absolute;
     height: 100%;
     left: 0;
     right: 0;
+    transition-duration: 2s;
+    transition-delay: 2.5s;
+    z-index: 10;
 }
 
 .intro-background {
@@ -24,7 +31,7 @@ body {
     user-select: none;
 }
 
-.particles {
+.p-container {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -32,12 +39,8 @@ body {
 }
 
 .intro-gradient {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background: radial-gradient(circle, transparent, black 120%);
     z-index: 1;
-    top: 0;
 }
 
 div.opacity {
@@ -62,7 +65,6 @@ div.inner-opacity {
 }
 
 .inner-opacity > h1, .text {
-
     color: white;
     text-align: center;
     word-wrap: break-word;
@@ -76,7 +78,7 @@ div.inner-opacity {
     font-size: 50px;
 }
 
-button.intro {
+button.intro-btn {
     position: relative;
     padding: 10px;
     background-color: transparent;
@@ -88,19 +90,19 @@ button.intro {
     margin: 25px 70px;
 }
 
-button.intro:hover {
+button.intro-btn:hover {
     opacity: 1;
     color: #00CC00;
     border-color: #00CC00;
     cursor: pointer; 
 }
 
-button.intro > span {
+button.intro-btn > span {
     display: inline-block;
     transition: 0.3s;
 }
 
-button.intro:hover > span {
+button.intro-btn:hover > span {
     display: inline-block;
     transform: translate(-20px, 0);
     opacity: 0;
@@ -111,7 +113,7 @@ span.interrogant {
     opacity: 0;
 }
 
-button.intro:hover > .interrogant {
+button.intro-btn:hover > .interrogant {
     display: inline-block;
     transform: translate(-75px, 0);
     opacity: 1;
