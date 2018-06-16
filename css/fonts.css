@@ -1,0 +1,21 @@
+@font-face {
+    font-family: roboto;
+    src: url('../src/fonts/roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('../src/fonts/roboto/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('../src/fonts/roboto/Roboto-Light.ttf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "permanent marker";
+    src: url('../src/fonts/permanent-marker/PermanentMarker-Regular.ttf');
+}

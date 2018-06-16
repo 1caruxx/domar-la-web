@@ -1,0 +1,124 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: roboto;
+    margin: 0;
+    overflow: hidden;
+}
+
+.intro-container {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+
+.intro-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(60%);
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.particles {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; 
+}
+
+.intro-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent, black 120%);
+    z-index: 1;
+    top: 0;
+}
+
+div.opacity {
+    top: 35%;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+div.inner-opacity {
+    border-left: solid red 2px;
+    border-right: solid red 2px;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner-opacity > h1, .text {
+
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 0 5px;
+    opacity: 0.7;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.inner-opacity > h1 {
+    font-size: 50px;
+}
+
+button.intro {
+    position: relative;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    opacity: 0.5;
+    border: solid 2px rgb(255, 255, 255);
+    transition: 0.5s;
+    font-size: 20px;
+    margin: 25px 70px;
+}
+
+button.intro:hover {
+    opacity: 1;
+    color: #00CC00;
+    border-color: #00CC00;
+    cursor: pointer; 
+}
+
+button.intro > span {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+button.intro:hover > span {
+    display: inline-block;
+    transform: translate(-20px, 0);
+    opacity: 0;
+}
+
+span.interrogant {
+    position: absolute;
+    opacity: 0;
+}
+
+button.intro:hover > .interrogant {
+    display: inline-block;
+    transform: translate(-75px, 0);
+    opacity: 1;
+}
+
+div.circle-effect {
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+}
