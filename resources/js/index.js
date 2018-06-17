@@ -19,6 +19,7 @@ $(document).ready(function() {
                 "animation-duration": "0.5s"
             });
             
+            button.css("cursor", "not-allowed");
             button.prop("disabled", "true");
 
             setTimeout(() => {

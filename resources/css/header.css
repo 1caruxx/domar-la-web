@@ -5,7 +5,7 @@
 
 .image-hero {
     position: relative;
-    height: 70%;
+    height: 95vh;
     display: flex;
 }
 
@@ -21,4 +21,12 @@
     left: 4vw;
     -moz-user-select: none;
     user-select: none;
+    text-shadow: 0 10px 0 var(--bordo);
+}
+
+.main {
+    width: 60%;
+    margin: auto;
+    border: solid 2px red;
+    padding: 10px 
 }

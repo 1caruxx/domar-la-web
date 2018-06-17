@@ -1,0 +1,18 @@
+{
+    "particles": {
+        "color": {
+            "value": "#00CC00"
+        },
+        "shape": {
+            "type": "edge"
+        },
+        "size": {
+            "value": 3,
+            "random": true
+        },
+        "move": {
+            "direction": "top",
+            "speed": 0.5
+        }
+    }
+}

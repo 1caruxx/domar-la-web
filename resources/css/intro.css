@@ -1,17 +1,3 @@
-html {
-    animation-name: opacidad;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    height: 100%;
-    font-family: roboto;
-}
-
-body {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-}
-
 .intro {
     position: absolute;
     height: 100%;
@@ -55,8 +41,6 @@ div.opacity {
 }
 
 div.inner-opacity {
-    border-left: solid red 2px;
-    border-right: solid red 2px;
     width: 20%;
     height: 100%;
     display: flex;
@@ -76,6 +60,8 @@ div.inner-opacity {
 
 .inner-opacity > h1 {
     font-size: 50px;
+    border-bottom: solid 1px white;
+    padding-bottom: 3vh;
 }
 
 button.intro-btn {
@@ -92,8 +78,8 @@ button.intro-btn {
 
 button.intro-btn:hover {
     opacity: 1;
-    color: #00CC00;
-    border-color: #00CC00;
+    color: var(--verde);
+    border-color: var(--verde);
     cursor: pointer; 
 }
 

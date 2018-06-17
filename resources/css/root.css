@@ -1,0 +1,26 @@
+html {
+    animation-name: opacidad;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    font-family: roboto;
+    --verde: #00CC00;
+    --bordo: #580E1D;
+    --bordo-claro: #9A010B;
+    --gris: #E8E8E8;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--gris);
+}
+
+::-moz-selection {
+    background-color: var(--bordo-claro);
+    color: white;
+}
+
+::selection {
+    background-color: var(--bordo-claro);
+    color: white;
+}
