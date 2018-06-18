@@ -6,12 +6,14 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Doma la web
         link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="./vendors/animate.min.css")
         link(rel="stylesheet", href="./resources/css/main.css")
 
-        
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="./vendors/jquery-3.3.1.min.js")
         script(src="./vendors/particles.min.js")
-        script(src="./resources/js/index.js")
+        script(src="./vendors/scroll-magic.min.js")
+        script(src="./resources/js/index.js", type="module")
+
     body
 
         audio(src="./resources/audio/tribal-effect.mp3")
@@ -24,14 +26,14 @@ html(lang="en")
             div#particles-js.p-container
             .opacity
                 .inner-opacity 
-                    h1 La jungla
-                    .text Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!
+                    h1 La web
+                    .text es una jungla moderna que abraza cada vez a mas personas. Vos estas postrado/a en el centro de ella.
                     button.intro-btn
                         .circle-effect
                         span Que debo hacer
                         span.interrogant ?
-        
-        .content
+                            
+        .content 
             .image-hero
                 img.intro-background(src="./resources/images/image-hero.jpg")
                 .p-container.intro-gradient
@@ -39,11 +41,12 @@ html(lang="en")
                     span Dómala.
 
             ul.horizontal-navigation-bar
-                li Lorem
+                li Inicio
                     div
-                li Lorem
+                    
+                li La travesia
                     div
-                li Lorem
+                li ¿Quien soy?
                     div
                 li Lorem
                     div
@@ -90,7 +93,96 @@ html(lang="en")
                 section
                     p.
                         Como bien dije, este es un saber un tanto mas escondido que el resto. El camino para muchos no esta tan claro y en muchos casos no se dispone de la guia
-                        que se ofrece en el ambito escolar
+                        que se ofrece en el ambito escolar. Pero siempre habra un punto de partida, es por eso que te presento a:
+                    h1.scroll-animation(style="transition-delay: 1.5s;", name="first-animation") Los tres pilares
+                    .flex
+                        .scroll-animation(style="transition-delay: .5s;", name="first-animation"): img(src="./resources/images/css3-logo.png")
+                        .scroll-animation(name="first-animation"): img(src="./resources/images/html-logo.png")
+                        .scroll-animation(style="transition-delay: 1s;", name="first-animation"): img(src="./resources/images/js-logo.png")
+                    
+                    p.
+                        Estos tres lenguajes son la base que al menos todo desarollador web debe conocer. A partir de estos tres pilares
+                        puede contruirse el resto. Es mas, conociendolos en profundidad, estos pueden ser trasladados a otros ambitos.<br/>
+                    
+                    h2(style="color: #E44D26;") HTML
+
+                    p.
+                        Es aquel que contruira la estructura de tu pagina web. Es un lenguaje de marcado, lo que quiere decir que el contenido
+                        que se mostrara en la pagina, estara entre marcas o etiquetas (comunmente llamadas <i>tags</i>). Estas etiquetas
+                        son un estandar que todos los navegadores deberia seguir. A traves de estas, se le especifica al navegador como renderizar (mostrarlo en pantalla)
+                        su contenido, que no tiene porque ser solamente texto, sino que puede ser cualquier cosa, como una imagen o cualquier otro recurso.
+                    
+                    h2(style="color: #0170BA;", title="😱")#easter-egg CSS
+                    
+                    p.
+                        CSS sera quien se encargue de añadir estilos a la pagina, es decir su apariencia y su posicion. Sin estilos la pagina se veria muy simple y los
+                        elemtos que la forman, se colocarian uno debajo del otro o al lado. A menos que te interese solo crear paginas web del gobierno, deberias aprender
+                        este lenguaje.
+
+                    h2(style="color: #E5A228;") Javascript
+
+                    p.
+                        A diferencia de los anteriores, Javascript si es un lenguaje de programacion. Con el se podra programar la logica de la pagina web, enviar datos al servidor,
+                        ejecutar acciones en base a lo que el usuario haga, darle vida a la pagina web en si. Javascript no solo sirve para paginas web. Con ayuda de otras herramientas,
+                        es posible crear aplicaciones para un sistema operativo si se desea.<br/>
+                    hr
+
+                    p.
+                        Ahora, escribir en estos lenguajes puede resultar ser un poco complicado por la sintaxis que tiene cada uno o puede que algunas funcionalidades se queden cortas
+                        ya que la evolucion del desarollo web exije cada vez mas y mas. Es por esta razon que se inventaron:
+
+                    h1.scroll-animation(style="transition-delay: 1.5s;", name="second-animation") Los preprocesadores y librerias
+                    
+                    .flex
+                        .scroll-animation(name="second-animation")
+                            img(src="./resources/images/bootstrap-logo.jpg")
+                            div Bootstrap
+                        .scroll-animation(style="transition-delay: 1s;", name="second-animation")
+                            img(src="./resources/images/typescript-logo.jpg")
+                            div TypeScript   
+                        .scroll-animation(name="second-animation")
+                            img(src="./resources/images/jquery-logo.png")
+                            div jQuery   
+                    
+                    .flex
+                        .scroll-animation(style="transition-delay: .5s;", name="second-animation")
+                            img(src="./resources/images/sass-logo.png")
+                            div Sass   
+                        .scroll-animation(style="transition-delay: .5s;", name="second-animation")
+                            img(src="./resources/images/pug-logo.png")
+                            div pug   
+                    
+                    p.
+                        Sobre estas bases, se aplicaran capas, ya sea para extender su funcionamiento o facilitar aun mas su uso. El
+                        desarollo web ha evolucionado tanto, que ya no solo se pueden contruir paginas web con los pilares, sino que con
+                        la ayuda de otras herramientas, es posible crear aplicaciones de escritorio, poder interactuar con hardware o crear
+                        apps para dispositivos mobiles, conocidas como aplicaciones hibridas.
+
+                    h1.scroll-animation(style="transition-delay: 1.5s;", name="third-animation") Frameworks
+                    .flex
+                        .scroll-animation(name="third-animation")
+                            img(src="./resources/images/react-logo.png")
+                            div React
+                        .scroll-animation(style="transition-delay: 1s;", name="third-animation")
+                            img(src="./resources/images/angular-logo.png")
+                            div Angular   
+                        .scroll-animation(name="third-animation")
+                            img(src="./resources/images/vue.js-logo.png")
+                            div Vue.js
+
+                h1 Y esto no se termina aca...
+                section
+                    p.
+                        Como bien dije, el camino del desarollador web es interminable. Esto solo un pantallaso muy acotado para dar
+                        una idea de como empezar. Asi como hoy aprendes estas tecnologias, mañana saldran otras que las reemplazaran. Esto
+                        es algo que puede desmotivar, aprender algo para que en un futuro quede obselto y en consecuencia, esos conocimientos
+                        dejan de ser utiles, pero esto no puede estar mas lejos de la realidad. En la programacion, todo esta conectado. Esta
+                        tecnologia que hoy aprendiste, probablemente tendra un gran parentezco con aquella que la reemplazara mañana.<br/>
+                        Por esta razon, es tan importante que te guste la programacion, sin importar a que ambito la destines. El mantenerse
+                        actualizado es clave, de lo contrario, resolver ciertas problematicas podria tornarse cada vez mas dificil. De momento,
+                        aprender como funcionan los tres pilares es la mejor decision que podes tomar en el caso de que no quieras que la jungla te
+                        absorva.
+
 
                 ul
                     li 1
@@ -143,48 +235,3 @@ html(lang="en")
                     li 48
                     li 49
                     li 50
-                    li 8
-                    li 9
-                    li 10
-                    li 11
-                    li 12
-                    li 13
-                    li 14
-                    li 15
-                    li 16
-                    li 17
-                    li 18
-                    li 19
-                    li 20
-                    li 21
-                    li 22
-                    li 23
-                    li 24
-                    li 25
-                    li 26
-                    li 27
-                    li 28
-                    li 29
-                    li 30
-                    li 31
-                    li 32
-                    li 33
-                    li 34
-                    li 35
-                    li 36
-                    li 37
-                    li 38
-                    li 39
-                    li 40
-                    li 41
-                    li 42
-                    li 43
-                    li 44
-                    li 45
-                    li 46
-                    li 47
-                    li 48
-                    li 49
-                    li 50   
-
-

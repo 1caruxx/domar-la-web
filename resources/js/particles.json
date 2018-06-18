@@ -1,7 +1,7 @@
 {
     "particles": {
         "number": {
-            "value": 30
+            "value": 100
         },
         "opacity": {
             "value": 0.7,
@@ -14,7 +14,7 @@
             "enable": false
         },
         "size": {
-            "value": 10,
+            "value": 7,
             "random": true
         }
     },

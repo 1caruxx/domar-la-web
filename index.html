@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Doma la web</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./vendors/animate.min.css"/>
     <link rel="stylesheet" href="./resources/css/main.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./vendors/jquery-3.3.1.min.js"></script>
     <script src="./vendors/particles.min.js"></script>
-    <script src="./resources/js/index.js"></script>
+    <script src="./vendors/scroll-magic.min.js"></script>
+    <script src="./resources/js/index.js" type="module"></script>
   </head>
   <body>
     <audio src="./resources/audio/tribal-effect.mp3"></audio>
@@ -19,27 +21,27 @@
       <div class="p-container" id="particles-js"></div>
       <div class="opacity">
         <div class="inner-opacity"> 
-          <h1>La jungla</h1>
-          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</div>
+          <h1>La web</h1>
+          <div class="text">es una jungla moderna que abraza cada vez a mas personas. Vos estas postrado/a en el centro de ella.</div>
           <button class="intro-btn">
             <div class="circle-effect"></div><span>Que debo hacer</span><span class="interrogant">?</span>
           </button>
         </div>
       </div>
     </div>
-    <div class="content">
+    <div class="content"> 
       <div class="image-hero"><img class="intro-background" src="./resources/images/image-hero.jpg"/>
         <div class="p-container intro-gradient"></div>
         <div class="lalaa"><span>Dómala.</span></div>
       </div>
       <ul class="horizontal-navigation-bar">
-        <li>Lorem
+        <li>Inicio
           <div></div>
         </li>
-        <li>Lorem
+        <li>La travesia
           <div></div>
         </li>
-        <li>Lorem
+        <li>¿Quien soy?
           <div></div>
         </li>
         <li>Lorem
@@ -91,7 +93,99 @@
         <section>
           <p>
             Como bien dije, este es un saber un tanto mas escondido que el resto. El camino para muchos no esta tan claro y en muchos casos no se dispone de la guia
-            que se ofrece en el ambito escolar
+            que se ofrece en el ambito escolar. Pero siempre habra un punto de partida, es por eso que te presento a:
+          </p>
+          <h1 class="scroll-animation" style="transition-delay: 1.5s;" name="first-animation">Los tres pilares</h1>
+          <div class="flex">
+            <div class="scroll-animation" style="transition-delay: .5s;" name="first-animation"><img src="./resources/images/css3-logo.png"/></div>
+            <div class="scroll-animation" name="first-animation"><img src="./resources/images/html-logo.png"/></div>
+            <div class="scroll-animation" style="transition-delay: 1s;" name="first-animation"><img src="./resources/images/js-logo.png"/></div>
+          </div>
+          <p>
+            Estos tres lenguajes son la base que al menos todo desarollador web debe conocer. A partir de estos tres pilares
+            puede contruirse el resto. Es mas, conociendolos en profundidad, estos pueden ser trasladados a otros ambitos.<br/>
+            
+          </p>
+          <h2 style="color: #E44D26;">HTML</h2>
+          <p>
+            Es aquel que contruira la estructura de tu pagina web. Es un lenguaje de marcado, lo que quiere decir que el contenido
+            que se mostrara en la pagina, estara entre marcas o etiquetas (comunmente llamadas <i>tags</i>). Estas etiquetas
+            son un estandar que todos los navegadores deberia seguir. A traves de estas, se le especifica al navegador como renderizar (mostrarlo en pantalla)
+            su contenido, que no tiene porque ser solamente texto, sino que puede ser cualquier cosa, como una imagen o cualquier otro recurso.
+            
+          </p>
+          <h2 style="color: #0170BA;" title="😱" id="easter-egg">CSS</h2>
+          <p>
+            CSS sera quien se encargue de añadir estilos a la pagina, es decir su apariencia y su posicion. Sin estilos la pagina se veria muy simple y los
+            elemtos que la forman, se colocarian uno debajo del otro o al lado. A menos que te interese solo crear paginas web del gobierno, deberias aprender
+            este lenguaje.
+            
+          </p>
+          <h2 style="color: #E5A228;">Javascript</h2>
+          <p>
+            A diferencia de los anteriores, Javascript si es un lenguaje de programacion. Con el se podra programar la logica de la pagina web, enviar datos al servidor,
+            ejecutar acciones en base a lo que el usuario haga, darle vida a la pagina web en si. Javascript no solo sirve para paginas web. Con ayuda de otras herramientas,
+            es posible crear aplicaciones para un sistema operativo si se desea.<br/>
+          </p>
+          <hr/>
+          <p>
+            Ahora, escribir en estos lenguajes puede resultar ser un poco complicado por la sintaxis que tiene cada uno o puede que algunas funcionalidades se queden cortas
+            ya que la evolucion del desarollo web exije cada vez mas y mas. Es por esta razon que se inventaron:
+            
+          </p>
+          <h1 class="scroll-animation" style="transition-delay: 1.5s;" name="second-animation">Los preprocesadores y librerias</h1>
+          <div class="flex">
+            <div class="scroll-animation" name="second-animation"><img src="./resources/images/bootstrap-logo.jpg"/>
+              <div>Bootstrap</div>
+            </div>
+            <div class="scroll-animation" style="transition-delay: 1s;" name="second-animation"><img src="./resources/images/typescript-logo.jpg"/>
+              <div>TypeScript   </div>
+            </div>
+            <div class="scroll-animation" name="second-animation"><img src="./resources/images/jquery-logo.png"/>
+              <div>jQuery   </div>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="scroll-animation" style="transition-delay: .5s;" name="second-animation"><img src="./resources/images/sass-logo.png"/>
+              <div>Sass   </div>
+            </div>
+            <div class="scroll-animation" style="transition-delay: .5s;" name="second-animation"><img src="./resources/images/pug-logo.png"/>
+              <div>pug   </div>
+            </div>
+          </div>
+          <p>
+            Sobre estas bases, se aplicaran capas, ya sea para extender su funcionamiento o facilitar aun mas su uso. El
+            desarollo web ha evolucionado tanto, que ya no solo se pueden contruir paginas web con los pilares, sino que con
+            la ayuda de otras herramientas, es posible crear aplicaciones de escritorio, poder interactuar con hardware o crear
+            apps para dispositivos mobiles, conocidas como aplicaciones hibridas.
+            
+          </p>
+          <h1 class="scroll-animation" style="transition-delay: 1.5s;" name="third-animation">Frameworks</h1>
+          <div class="flex">
+            <div class="scroll-animation" name="third-animation"><img src="./resources/images/react-logo.png"/>
+              <div>React</div>
+            </div>
+            <div class="scroll-animation" style="transition-delay: 1s;" name="third-animation"><img src="./resources/images/angular-logo.png"/>
+              <div>Angular   </div>
+            </div>
+            <div class="scroll-animation" name="third-animation"><img src="./resources/images/vue.js-logo.png"/>
+              <div>Vue.js</div>
+            </div>
+          </div>
+        </section>
+        <h1>Y esto no se termina aca...</h1>
+        <section>
+          <p>
+            Como bien dije, el camino del desarollador web es interminable. Esto solo un pantallaso muy acotado para dar
+            una idea de como empezar. Asi como hoy aprendes estas tecnologias, mañana saldran otras que las reemplazaran. Esto
+            es algo que puede desmotivar, aprender algo para que en un futuro quede obselto y en consecuencia, esos conocimientos
+            dejan de ser utiles, pero esto no puede estar mas lejos de la realidad. En la programacion, todo esta conectado. Esta
+            tecnologia que hoy aprendiste, probablemente tendra un gran parentezco con aquella que la reemplazara mañana.<br/>
+            Por esta razon, es tan importante que te guste la programacion, sin importar a que ambito la destines. El mantenerse
+            actualizado es clave, de lo contrario, resolver ciertas problematicas podria tornarse cada vez mas dificil. De momento,
+            aprender como funcionan los tres pilares es la mejor decision que podes tomar en el caso de que no quieras que la jungla te
+            absorva.
+            
             
           </p>
         </section>
@@ -146,49 +240,6 @@
           <li>48</li>
           <li>49</li>
           <li>50</li>
-          <li>8</li>
-          <li>9</li>
-          <li>10</li>
-          <li>11</li>
-          <li>12</li>
-          <li>13</li>
-          <li>14</li>
-          <li>15</li>
-          <li>16</li>
-          <li>17</li>
-          <li>18</li>
-          <li>19</li>
-          <li>20</li>
-          <li>21</li>
-          <li>22</li>
-          <li>23</li>
-          <li>24</li>
-          <li>25</li>
-          <li>26</li>
-          <li>27</li>
-          <li>28</li>
-          <li>29</li>
-          <li>30</li>
-          <li>31</li>
-          <li>32</li>
-          <li>33</li>
-          <li>34</li>
-          <li>35</li>
-          <li>36</li>
-          <li>37</li>
-          <li>38</li>
-          <li>39</li>
-          <li>40</li>
-          <li>41</li>
-          <li>42</li>
-          <li>43</li>
-          <li>44</li>
-          <li>45</li>
-          <li>46</li>
-          <li>47</li>
-          <li>48</li>
-          <li>49</li>
-          <li>50   </li>
         </ul>
       </div>
     </div>

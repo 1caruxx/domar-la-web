@@ -15,8 +15,7 @@ var foo = true;
     //   .setClassToggle(".scroll-animation", "show")
       .on("enter", () => { 
           $(".scroll-animation").addClass("show");
-          controller.remove(this);
-        
+
         })
       .addTo(controller);
 

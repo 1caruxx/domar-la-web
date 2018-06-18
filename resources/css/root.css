@@ -4,8 +4,8 @@ html {
     animation-timing-function: linear;
     font-family: roboto;
     --verde: #00CC00;
+    --verde-seco: #93A72E;
     --bordo: #580E1D;
-    --bordo-claro: #9A010B;
     --gris: #E8E8E8;
 }
 
@@ -16,11 +16,11 @@ body {
 }
 
 ::-moz-selection {
-    background-color: var(--bordo-claro);
+    background-color: var(--verde-seco);
     color: white;
 }
 
 ::selection {
-    background-color: var(--bordo-claro);
+    background-color: var(--verde-seco);
     color: white;
 }

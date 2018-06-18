@@ -1,12 +1,11 @@
+import { plugins } from "./plugins.js";
+
 $(document).ready(function() {
 
     if(localStorage.getItem("mostrar") !== "false") {
 
-        particlesJS.load('particles-js', './resources/js/particles.json', function() {
+        plugins.ParticlesJS();
 
-            console.log('callback - particles.js config loaded');
-        });
-    
         $(".intro-btn").click(function() {
 
             var button = $(this);
@@ -30,10 +29,12 @@ $(document).ready(function() {
                 });
 
                 $(".content").css("display", "block");
-                
+
+                plugins.ScrollMagic();
             }, 510);
 
             intro.css("opacity", "0");
+            $(".content").css("opacity", "1");
 
             setTimeout(() => {
 
@@ -48,5 +49,31 @@ $(document).ready(function() {
         $("body").css("overflow", "visible");
         $(".intro").css("display", "none");
         $(".content").css("display", "block");
+
+        plugins.ScrollMagic();
     }
+
+
+    $("#easter-egg").click(function() {
+
+        var header = $(this);
+        header.attr("class", "animated hinge");
+
+        var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+          
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+          
+          header.one(animationEnd, function() { header.css("visibility", "hidden"); });
+    });
 });
