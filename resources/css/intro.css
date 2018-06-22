@@ -48,7 +48,7 @@ div.inner-opacity {
     justify-content: center;
 }
 
-.inner-opacity > h1, .text {
+.intro h1, .text {
     color: white;
     text-align: center;
     word-wrap: break-word;
@@ -58,7 +58,7 @@ div.inner-opacity {
     user-select: none;
 }
 
-.inner-opacity > h1 {
+.intro h1 {
     font-size: 50px;
     border-bottom: solid 1px white;
     padding-bottom: 3vh;

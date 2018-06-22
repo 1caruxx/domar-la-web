@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Doma la web</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="./vendors/bootstrap.min.css"/>
     <link rel="stylesheet" href="./vendors/animate.min.css"/>
     <link rel="stylesheet" href="./resources/css/main.css"/>
     <script src="./vendors/jquery-3.3.1.min.js"></script>
@@ -15,21 +16,28 @@
   </head>
   <body>
     <audio src="./resources/audio/tribal-effect.mp3"></audio>
-    <button style="position: absolute;z-index: 100;top: 0;left: 0;" onclick="localStorage.clear();">Limpiar cache</button>
     <div class="intro"><img class="intro-background" src="./resources/images/intro-background.jpg"/>
       <div class="p-container intro-gradient"></div>
       <div class="p-container" id="particles-js"></div>
       <div class="opacity">
-        <div class="inner-opacity"> 
-          <h1>La web</h1>
-          <div class="text">es una jungla moderna que abraza cada vez a mas personas. Vos estas postrado/a en el centro de ella.</div>
-          <button class="intro-btn">
-            <div class="circle-effect"></div><span>Que debo hacer</span><span class="interrogant">?</span>
-          </button>
+        <div class="container d-flex flex-column justify-content-center align-content-center">
+          <div class="row">
+            <div class="col-md-3 col-sm-2"></div>
+            <div class="col-md-6 col-sm-8">
+              <div class="d-flex flex-column">
+                <h1>La web</h1>
+                <div class="text">es una jungla moderna que abraza cada vez a mas personas. Vos estas postrado/a en el centro de ella.</div>
+                <button class="intro-btn">
+                  <div class="circle-effect"></div><span>Que debo hacer</span><span class="interrogant">?</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-2"></div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="content"> 
+    <div class="content">
       <div class="image-hero"><img class="intro-background" src="./resources/images/image-hero.jpg"/>
         <div class="p-container intro-gradient"></div>
         <div class="lalaa"><span>Dómala.</span></div>
@@ -44,14 +52,8 @@
         <li>¿Quien soy?
           <div></div>
         </li>
-        <li>Lorem
-          <div></div>
-        </li>
-        <li>Lorema
-          <div></div>
-        </li>
       </ul>
-      <div class="main">
+      <div class="container" style="margin-top: 2em;">
         <h1>¿Como puedo conseguirlo?</h1>
         <hr/>
         <section>
@@ -132,6 +134,7 @@
             Ahora, escribir en estos lenguajes puede resultar ser un poco complicado por la sintaxis que tiene cada uno o puede que algunas funcionalidades se queden cortas
             ya que la evolucion del desarollo web exije cada vez mas y mas. Es por esta razon que se inventaron:
             
+            
           </p>
           <h1 class="scroll-animation" style="transition-delay: 1.5s;" name="second-animation">Los preprocesadores y librerias</h1>
           <div class="flex">
@@ -185,62 +188,8 @@
             actualizado es clave, de lo contrario, resolver ciertas problematicas podria tornarse cada vez mas dificil. De momento,
             aprender como funcionan los tres pilares es la mejor decision que podes tomar en el caso de que no quieras que la jungla te
             absorva.
-            
-            
           </p>
         </section>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-          <li>9</li>
-          <li>10</li>
-          <li>11</li>
-          <li>12</li>
-          <li>13</li>
-          <li>14</li>
-          <li>15</li>
-          <li>16</li>
-          <li>17</li>
-          <li>18</li>
-          <li>19</li>
-          <li>20</li>
-          <li>21</li>
-          <li>22</li>
-          <li>23</li>
-          <li>24</li>
-          <li>25</li>
-          <li>26</li>
-          <li>27</li>
-          <li>28</li>
-          <li>29</li>
-          <li>30</li>
-          <li>31</li>
-          <li>32</li>
-          <li>33</li>
-          <li>34</li>
-          <li>35</li>
-          <li>36</li>
-          <li>37</li>
-          <li>38</li>
-          <li>39</li>
-          <li>40</li>
-          <li>41</li>
-          <li>42</li>
-          <li>43</li>
-          <li>44</li>
-          <li>45</li>
-          <li>46</li>
-          <li>47</li>
-          <li>48</li>
-          <li>49</li>
-          <li>50</li>
-        </ul>
       </div>
     </div>
   </body>
